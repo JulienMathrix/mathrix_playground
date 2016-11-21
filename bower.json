@@ -1,0 +1,23 @@
+{
+  "name": "mathrix_playground",
+  "authors": [
+    "Julien Schneider <julien.schneider.1991@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angulartics": "^1.3.0",
+    "angulartics-google-analytics": "^0.3.0"
+  }
+}

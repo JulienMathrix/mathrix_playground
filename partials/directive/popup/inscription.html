@@ -1,0 +1,60 @@
+
+<div id="popup_inscription">
+  <div  class='mathrix-modal-inscription mathrix-modal animate'>
+
+    <div class='modal-close' ng-click='close()'></div>
+
+
+    <form name='inscriptionForm'>
+
+        <div class='titre'>S'inscrire</div>
+
+        <select ng-model="input_classe_id" class='select-input' tabindex="10" ng-options="classe.id as classe.nom for classe in classe |filter : {pays_id: '1'}">
+          <option>[[classe.nom]]</option>
+        </select>
+
+
+
+       <div class='rich-input' layout='row'>
+                            <div class='lumix-container'>
+                              <div class='lumix'></div>
+                          </div>
+         <input type='text' flex class='form-input form-input-icon' tabindex="11" placeholder='Email' ng-model="email" >
+         <i class='icone icone-left icone-email'></i>
+       </div>
+
+       <div class='error_input'>[[errorsInscription.email[0] ]]</div>
+
+
+
+
+         <div class='rich-input' layout='row'>
+           <input type='text' flex class='form-input form-input-icon' tabindex="12" placeholder="Nom d'utilisateur" ng-model="username" >
+           <i class='icone icone-left icone-person'></i>
+        </div>
+
+         <div class='error_input'>[[errorsInscription.username[0] ]]</div>
+
+
+
+
+         <div class='rich-input'>
+             <input type='password' flex class='form-input form-input-icon' tabindex="13"  placeholder='Mot de passe' ng-model="password">
+             <i class='icone icone-left icone-password'></i>
+         </div>
+
+         <div class='error_input'>[[errorsInscription.password[0] ]]</div>
+
+
+         <div layout='row' layout-align = 'center'>
+           <button flex='100'class='button-medium button-accent' tabindex="14"  ng-click='inscription()'>M'inscrire</button>
+         </div>
+
+         <div layout='row' layout-align = 'center'>
+           <button flex='80' class='button-medium button-facebook' ng-click='inscriptionFacebook()' tabindex="15" ><div class='content'><div class='logo-facebook'></div>M'inscrire via Facebook</div></button>
+         </div>
+    </form>
+
+    <div class='footer'>Déjà inscrit ? <span class='mathrix-lien' ng-click='go_connexion()'>Me connecter</span></div>
+  </div>
+</div>

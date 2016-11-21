@@ -1,0 +1,44 @@
+<div id='popup_choisir_classe'>
+  <div class='transparent-background' ng-click='close()'>
+    <div class='menu_classe'>
+
+
+      <div ng-hide='smartphoneVersion'>
+        <div class='ligne animate-opacity' id='ligne-1'>
+          <button class='blur button-classe button-classe-big hoverAnimate' ng-click='changeClasse("cycle-4-5eme")'>5è</button>
+          <button class='blur button-classe button-classe-big hoverAnimate' ng-click='changeClasse("cycle-4-4eme")'>4è</button>
+          <button class='blur button-classe button-classe-big hoverAnimate' ng-click='changeClasse("cycle-4-3eme")'>3è</button>
+          <button class='blur button-classe button-classe-big hoverAnimate' ng-click='changeClasse("2nde")'>2nde</button>
+          <button class='blur button-classe button-classe-big hoverAnimate' ng-click='changeClasse("1ere-l")'>1L</button>
+        </div>
+        <div class='ligne' id='ligne-2' >
+
+          <button class='blur button-classe button-classe-big hoverAnimate' ng-click='changeClasse("1ere-es")'>1ES</button>
+          <button class='blur button-classe button-classe-big hoverAnimate' ng-click='changeClasse("1ere-s")'>1S</button>
+          <button class='blur button-classe button-classe-big hoverAnimate' ng-click='changeClasse("terminale-es")'>TES</button>
+          <button class='blur button-classe button-classe-big hoverAnimate' ng-click='changeClasse("terminale-l")'>TL</button>
+          <button class='blur button-classe button-classe-big hoverAnimate' ng-click='changeClasse("terminale-s")'>TS</button>
+        </div>
+      </div>
+
+
+      <div ng-show='smartphoneVersion' class='smartphone-classe-container'>
+          <button class='blur button-classe button-classe-big hoverAnimate' ng-click='changeClasse("cycle-4-5eme")'>5è</button>
+          <button class='blur button-classe button-classe-big hoverAnimate' ng-click='changeClasse("cycle-4-4eme")'>4è</button>
+          <button class='blur button-classe button-classe-big hoverAnimate' ng-click='changeClasse("cycle-4-3eme")'>3è</button>
+          <button class='blur button-classe button-classe-big hoverAnimate' ng-click='changeClasse("2nde")'>2nde</button>
+          <button class='blur button-classe button-classe-big hoverAnimate' ng-click='changeClasse("1ere-es")'>1ES</button>
+          <button class='blur button-classe button-classe-big hoverAnimate' ng-click='changeClasse("1ere-l")'>1L</button>
+          <button class='blur button-classe button-classe-big hoverAnimate' ng-click='changeClasse("1ere-s")'>1S</button>
+          <button class='blur button-classe button-classe-big hoverAnimate' ng-click='changeClasse("terminale-es")'>TES</button>
+          <button class='blur button-classe button-classe-big hoverAnimate' ng-click='changeClasse("terminale-l")'>TL</button>
+          <button class='blur button-classe button-classe-big hoverAnimate' ng-click='changeClasse("terminale-s")'>TS</button>
+
+      </div>
+
+
+
+
+    </div>
+  </div>
+</div>

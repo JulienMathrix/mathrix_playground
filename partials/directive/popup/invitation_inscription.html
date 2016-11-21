@@ -1,0 +1,71 @@
+<div  class='mathrix-modal-invitation-inscription mathrix-modal  animate'>
+  <div class='modal-close' ng-click='close()'></div>
+
+  <div class='titre'>Pourquoi s'inscrire...</div>
+  <div class='sous_titre'>C'est <b>gratuit</b> et tu pourras</div>
+
+  <!--<div class='image-save-stats'></div>-->
+
+<div layout='row'>
+<div flex>
+<div class='img-container'>
+<div class='img img_chart'></div>
+</div>
+<div class='description'>Fixer des objectifs</div>
+</div>
+
+<div flex>
+<div class='img-container'>
+<div class='img img_question'></div>
+</div>
+<div class='description'>Poser des questions</div>
+</div>
+
+</div>
+
+
+
+<div class='bar-middle'>
+  <div id='progression_bar'>
+    <div class="bar_fixed">
+      <div class="bar_blue" style='width : 80%'><div class='triangle-end'></div>
+      </div>
+    </div>
+    <div class='circle-prog big back'></div>
+
+    <div class='circle-prog big front'></div>
+    <div class='circle-prog small back'></div>
+    <div class='circle-prog small front' ></div>
+    <div class='star' ></div>
+    <div class='texte small' >3</div>
+  </div>
+  <div class='description' style='margin-top : -15px'>Enregistrer ton expérience</div>
+</div>
+
+
+
+
+
+  <div layout='row' ng-hide='smallPhone'>
+  <div flex>
+    <div class='img-container small'>
+      <div class='coeur coeur-vide'></div>
+    </div>
+  <div class='description'>Ajouter une activité aux<br/>favoris</div>
+  </div>
+
+  <div flex>
+    <div class='img-container small'>
+      <div class='img img_check_revoir'></div>
+  </div>
+  <div class='description'>Marquer des activités comme acquises ou à revoir</div>
+  </div>
+
+  </div>
+
+
+
+
+  <button class='button-accent button-big button-table' ng-click='goInscription()'>Crée ton profil</button>
+  <div class='button-plus-tard' ng-click='close()'>Créer un profil plus tard</div>
+</div>

@@ -1,0 +1,19 @@
+<div class='mathrix-modal mathrix-modal-small animate'>
+<div class='modal-close' ng-click='close()'></div>
+
+
+<div class='titre'>Changer l'adresse email</div>
+<div class='rich-input medium' layout='row'>
+  <input type='text' flex class='form-input' tabindex="2" placeholder="Nouvel email" ng-model="new_email" >
+  <i class='icone icone-left icone-email'></i>
+</div>
+<div class='text-small message message-alert' ng-show="error_email_message!='' && error_email_message!=undefined && !mdp_is_changed">[[error_email_message]]</div>
+
+<div class='text-small message message-success' ng-show="email_is_changed">L'adresse email a été changé.</div>
+<div class='footer'>
+  <button class='button button-big button-accent margin single-button' ng-click='changerEmail()' ng-hide='email_is_changed'>Changer</button>
+
+<button class='button button-big button-accent margin single-button' ng-show="email_is_changed" ng-click='close()'>Fermer</button>
+</div>
+
+</div>

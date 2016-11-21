@@ -1,0 +1,36 @@
+
+<div  class='mathrix-modal mathrix-modal-ask-classe animate'>
+
+   <div class='titre'>Bienvenue <br/>sur Mathrix</div>
+
+<div class='choisis-classe'>
+  <span ng-hide='showMenuEnregistrer'>Choisis ta classe !</span>
+  <span ng-show='showMenuEnregistrer'>Tu veux t'inscrire?</span>
+</div>
+
+<div class='ensemble-classe footer'>
+  <div class='lumix-container'>
+    <div class='lumix'></div>
+  </div>
+
+  <div ng-show='showBoutonClasse' class='animate-opacity'>
+   <button class='button-classe hoverAnimate'ng-click='goClasse(classe)' ng-repeat='classe in classe'>[[classe.nom]]</button>
+</div>
+  <div ng-show='showMenuEnregistrer' class='animate-opacity'>
+    <div class='texte-enregistrer'>Enregistre ta progression et débloque plus de vidéos et d'exercices.<br/><b>C'est gratuit !</b></div>
+
+<div layout='row'>
+    <button flex class='button-medium button-facebook' ng-click='goFacebook()'>M'inscrire via Facebook</button>
+</div>
+<div layout='row'>
+    <button flex='45' class='button-medium button-accent' ng-click='goInscription()'>M'inscrire</button>
+    <button flex = '45' flex-offset='10' class='button-medium button-accent' ng-click='fishing_no()'>Non, merci</button>
+</div>
+</div>
+
+
+
+</div>
+
+
+ </div>

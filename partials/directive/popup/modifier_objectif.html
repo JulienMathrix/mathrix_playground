@@ -1,0 +1,25 @@
+
+<div class=' mathrix-modal-coach mathrix-modal animate'>
+  <div class='modal-close' ng-click='close()'></div>
+
+   <div class='titre'>Entre ton objectif</div>
+<div layout='row'>
+<div flex hide-sm hide-xs>
+<div class='image-lumix-coach' ></div>
+</div>
+<div flex-gt-sm='60' flex class='difficulte-container'>
+<li ng-click='coach_difficulte = 10'><input type="radio" name='coach-mx' ng-model='coach_difficulte' selected value="10"><span class='difficulte'>Facile</span><span class='ipm'>10 points par jour</span></li>
+<li ng-click='coach_difficulte = 20'><input type="radio" name='coach-mx' ng-model='coach_difficulte' selected value="20"><span class='difficulte'>Normal</span><span class='ipm'>20 points par jour</span></li>
+<li ng-click='coach_difficulte = 40'><input type="radio" name='coach-mx' ng-model='coach_difficulte' selected value="40"><span class='difficulte'>Sérieux</span><span class='ipm'>40 points par jour</span></li>
+<div class='explication'>En moyenne, 10 points corrrespondent à 10 min de travail.</div>
+<div class='footer'>
+  <button class='button-accent single-button' ng-class="{'button-big' : globalProp.smartphoneVersion, 'button-medium' : !globalProp.smartphoneVersion}" ng-click='save_coach_difficulte()'>Enregistrer</button>
+</div>
+</div>
+
+ </div>
+
+
+
+
+</div>

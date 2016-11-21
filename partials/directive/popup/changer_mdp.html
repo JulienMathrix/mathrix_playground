@@ -1,0 +1,29 @@
+<div class='mathrix-modal mathrix-modal-small animate'>
+<div class='modal-close' ng-click='close()'></div>
+
+
+<div class='titre'>Changer le mot de passe</div>
+
+<div class='rich-input medium' layout='row'>
+  <input type='password' flex class='form-input' tabindex="2" placeholder="Ancien mot de passe" ng-model="old_password" >
+  <i class='icone icone-left icone-password'></i>
+</div>
+<div class='rich-input medium' layout='row'>
+  <input type='password' flex class='form-input' tabindex="2" placeholder="Nouveau mot de passe" ng-model="new_password" >
+  <i class='icone icone-left icone-password'></i>
+</div>
+<div class='rich-input medium' layout='row'>
+  <input type='password' flex class='form-input' tabindex="2" placeholder="Confirmation" ng-model="new_password_confirm" >
+  <i class='icone icone-left icone-password'></i>
+</div>
+
+
+<div class='text-small message message-alert' ng-show="error_password_message!='' && error_password_message!=undefined && !mdp_is_changed">[[error_password_message]]</div>
+
+<div class='footer'>
+  <button class='button button-big button-accent  single-button margin' ng-click='changerMotPasse()' ng-hide='mdp_is_changed'>Changer</button>
+</div>
+
+<div class='text-small message message-success' ng-show="mdp_is_changed">Le mot de passe a été changé.</div>
+<button class='button button-big margin button-accent' ng-show="mdp_is_changed" ng-click='close()'>Fermer</button>
+</div>
